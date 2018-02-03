@@ -85,7 +85,7 @@ end
 
 #Integration test
 def sell_pet_to_customer(pet_shop, pet, customer)
-  if pet != nil
+  if pet
     if customer_can_afford_pet(customer, pet)
        add_pet_to_customer(customer,pet)
        increase_pets_sold(pet_shop, 1)
